@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    height: 80vh;
+    /* background-color: #f0efef; */
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+}
+.phoneContainer{
+    height: 480px;
+    width: 380px;
+    /* background-color: red;  */
+    background-image: url(./home-phones-2x.png);
+    background-position: center 0px;
+    background-size: cover;
+    position: relative;
+}
+.imgContainer{
+  height:90%;
+  position: absolute;
+   right:37px;
+   top:24px;
+  width:58%;
+  background-image:url('./screenshot1-2x.png');
+  background-size: cover;
+  animation-name: photo;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 450px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+
+}
+.firstContainer{
+    border: 1px solid #DBDBDB;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    /* background-color: red; */
+
+}
+.firstContainer .logodiv{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.secondContainer{
+    border:  1px solid #DBDBDB;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    /* flex-grow: 1; */
+    height: 63px;
+}
+.secondContainer a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #0095F6;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+}
+.login input{
+    height: 40px;
+    padding-left: 10px;
+    border:1px solid #DBDBDB;
+}
+.login button{
+    height: 30px;
+    background-color: #4CB5F9;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.orline{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:center ;
+    gap: 20px;
+}
+.orline hr{
+    
+    width: 30%;
+    border:0.6px solid #DBDBDB; 
+   
+
+    /* flex-grow: 1; */
+
+}
+.loginWithFb a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #0095F6;
+}
+.forgotpwd a{
+    text-decoration: none;
+    color: black;
+}
+.thirdContainer{
+    display: flex;
+    height: 85px;
+    flex-wrap: wrap;
+  align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.thirdContainer img{
+    height: 40px;
+}
+@media(width<706px){
+    .phoneContainer{
+        display: none;
+    }
+}
+@keyframes photo {
+  0%{
+
+  }
+  25%{
+    background-image: url('./screenshot2-2x\ \(1\).png');
+  }
+  50%{
+    background-image: url('./screenshot2-2x\ \(1\).png');
+  }
+  75%{
+    background-image: url('./screenshot4-2x.png');
+  }
+  
+}
+footer{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="phoneContainer">
+        <div class="imgContainer"> </div>
+      </section>
+      <section class="loginForm">
+         <div class="firstContainer">
+                <div
+          class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xseo6mj xod5an3 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1 logodiv"
+        >
+          <i
+            data-visualcompletion="css-img"
+            aria-label="Instagram"
+            class=""
+            role="img"
+            style="
+              background-image: url('https://static.cdninstagram.com/rsrc.php/v4/yB/r/E7m8ZCMOFDS.png');
+              background-position: 0px -52px;
+              background-size: auto;
+              width: 175px;
+              height: 51px;
+              background-repeat: no-repeat;
+              display: inline-block;
+            "
+          ></i>
+        </div>
+        <form action="" class="login">
+            <input type="text" placeholder="Phone number , username, or email"/>
+            <input type="text" placeholder="Password"/>
+            <button type="submit">Log in</button>
+        </form>
+        <!-- ! OR line -->
+         <div class="orline">
+            <hr>
+            OR
+            <hr>
+         </div>
+         <!-- Log in with facebook -->
+          <div class="loginWithFb">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i> Log in with Facebook</a>
+          </div>
+          <div class="forgotpwd">
+            <a href="#">Forgot Password?</a>
+          </div>
+         </div>
+         <div class="secondContainer">
+            <p>Don't have an account?   <a href="#">Sign up</a></p>
+         </div>
+         <div class="thirdContainer">
+           <p>Get the app.</p>
+          <div> <img src="./WhatsApp Image 2025-02-25 at 13.03.40_8308873c.jpg" alt="">
+           <img src="./WhatsApp Image 2025-02-25 at 13.03.40_c3d5526d.jpg" alt=""></div>
+         </div>
+      </section>
+    </main>
+    <footer>
+      <div>meta</div>
+      <div>About</div>
+      <div>Blog</div>
+      <div>Help</div>
+      <div>Api</div>
+      <div>Privacy</div>
+      <div>Terms</div>
+      <div>Location</div>
+      <div> Instagram Lite</div>
+      <div>threads</div>
+      <div>contact Upload &Non-user</div>
+      <div>Meta Verfied</div>
+  </footer>
+  </body>
+</html>
+
+
+
+
